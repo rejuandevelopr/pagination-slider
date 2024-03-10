@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-one: #8447E9;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+h2 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: var(--color-one);
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: var(--color-one);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#pagination-slide {
+    padding-top: 46px;
+    padding-bottom: 76px;
+}
+
+
+.blog-content {
+    border-radius: 0.5rem;
+    height: 0px;
+    overflow: hidden;
+    padding-bottom: 67.5%;
+    position: relative;
+    width: 100%;
+}
+
+.blog-content img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.blog-content img:hover {
+    transform: scale(1.1);
+}
+
+.pedro-agent-content span:first-child {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #787878;
+}
+
+
+
+
+/* Pagination CSS */
+.sliderp-container {
+    position: relative;
+    max-width: auto;
+    margin: 0 auto;
+}
+  
+.sliderp {
+    display: flex;
+    overflow-x: hidden;
+}
+  
+.slide {
+    flex: 0 0 100%;
+}
+  
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+  
+.pagination button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 10px;
+}
+  
+.pagination-numbers {
+    display: flex;
+    align-items: center;
+}
+  
+.pagination-numbers span {
+    cursor: pointer;
+    padding: 0;
+    height: 3.2rem;
+    width: 3.2rem;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 2px solid transparent;
+    margin-right: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.pagination-numbers span:hover {
+    border: 2px solid var(--color-one);
+}
+
+.pagination-numbers span:last-child {
+    margin-right: 0;
+}
+  
+.pagination-numbers span.active {
+    color: var(--color-white);
+    background-color: var(--color-one);
+}
+
+.pagination .btn {
+    font-size: 22px;
+    border: 2px solid #D1D5DB;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:576px) {
+    .pagination-numbers span {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+    .pagination .btn {
+        font-size: 22px;
+    }
+}
